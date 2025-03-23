@@ -1,0 +1,32 @@
+[
+  {
+    "operator": "1",
+    "operation": "追加",
+    "memberName": "DD",
+    "timestamp": "2025-03-23T04:12:08.682Z"
+  },
+  {
+    "operator": "1",
+    "operation": "追加",
+    "memberName": "CC",
+    "timestamp": "2025-03-23T04:11:45.455Z"
+  },
+  {
+    "operator": "1",
+    "operation": "削除",
+    "memberName": "CC",
+    "timestamp": "2025-03-23T04:08:33.401Z"
+  },
+  {
+    "operator": "1",
+    "operation": "編集",
+    "memberName": "CC",
+    "timestamp": "2025-03-23T04:08:29.321Z"
+  },
+  {
+    "operator": "1",
+    "operation": "追加",
+    "memberName": "CC",
+    "timestamp": "2025-03-23T04:07:51.845Z"
+  }
+]
