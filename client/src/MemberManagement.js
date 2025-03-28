@@ -26,7 +26,7 @@ function MemberManagement({ operator }) {
 
   // 操作ログ一覧を取得する
   const fetchLogs = () => {
-    fetch('/api/logs')
+    fetch('/api/memberLogs')
       .then(response => response.json())
       .then(data => setLogs(data))
       .catch(error => console.error('Error fetching logs:', error));
