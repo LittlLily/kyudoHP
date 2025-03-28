@@ -13,15 +13,5 @@
     "id": 6,
     "accountId": "demo2",
     "password": "$2b$10$GVth/P8SWIeFlNirMxNTzOYTgDRhNx/RE7aWq5A7t70hsdq0waa4i"
-  },
-  {
-    "id": 7,
-    "accountId": "demodemo",
-    "password": "$2b$10$.BZ6cgNVjwbU4FgTQ3c/pOAFoo8h7L2uCZNqYqs.ZyOCgsGVeiHLO"
-  },
-  {
-    "id": 8,
-    "accountId": "demo3",
-    "password": "$2b$10$Po861V/dTpnEFE2ACJv6L.zeOaDqjJvZo0iJaSl.fDiBflyU1hixS"
   }
 ]
