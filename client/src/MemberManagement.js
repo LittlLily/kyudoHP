@@ -8,7 +8,7 @@ function MemberManagement({ operator }) {
   const [memberForm, setMemberForm] = useState({
     id: null,
     name: '',
-    age: '',
+    generation: '',
     gender: '',
     department: ''
   });
@@ -39,7 +39,7 @@ function MemberManagement({ operator }) {
 
   // フォームリセット
   const resetForm = () => {
-    setMemberForm({ id: null, name: '', age: '', gender: '', department: '' });
+    setMemberForm({ id: null, name: '', generation: '', gender: '', department: '' });
     setIsEditing(false);
   };
 
@@ -53,7 +53,7 @@ function MemberManagement({ operator }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: memberForm.name,
-          age: Number(memberForm.age),
+          generation: Number(memberForm.generation),
           gender: memberForm.gender,
           department: memberForm.department,
           operator // ログとして送信
@@ -76,7 +76,7 @@ function MemberManagement({ operator }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: memberForm.name,
-          age: Number(memberForm.age),
+          generation: Number(memberForm.generation),
           gender: memberForm.gender,
           department: memberForm.department,
           operator // ログとして送信
@@ -120,7 +120,7 @@ function MemberManagement({ operator }) {
   };
 
   // 年齢の大きい順（降順）に並び替えた部員一覧を生成
-  const sortedMembers = [...members].sort((a, b) => b.age - a.age);
+  const sortedMembers = [...members].sort((a, b) => b.generation - a.generation);
 
   return (
     <div style={{ padding: '20px' }}>
@@ -142,8 +142,8 @@ function MemberManagement({ operator }) {
           <label>年齢: </label>
           <input
             type="number"
-            value={memberForm.age}
-            onChange={(e) => setMemberForm({ ...memberForm, age: e.target.value })}
+            value={memberForm.generation}
+            onChange={(e) => setMemberForm({ ...memberForm, generation: e.target.value })}
             required
           />
         </div>
@@ -175,7 +175,7 @@ function MemberManagement({ operator }) {
       <ul>
         {sortedMembers.map(member => (
           <li key={member.id}>
-            {member.name} - {member.department} - {member.age}歳
+            {member.name} - {member.department} - {member.generation}歳
             <button onClick={() => handleEdit(member)} style={{ marginLeft: '10px' }}>
               編集
             </button>

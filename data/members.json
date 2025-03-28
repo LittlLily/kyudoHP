@@ -1,21 +1,21 @@
 [
   {
     "name": "BB",
-    "age": 15,
+    "generation": 15,
     "gender": "男性",
     "department": "情報科学",
     "id": 4
   },
   {
     "name": "AA",
-    "age": 63,
+    "generation": 63,
     "gender": "男性",
     "department": "情報工学",
     "id": 5
   },
   {
     "name": "CC",
-    "age": 64,
+    "generation": 64,
     "gender": "男性",
     "department": "応用科学",
     "operator": "1",
@@ -23,7 +23,7 @@
   },
   {
     "name": "DD",
-    "age": 65,
+    "generation": 65,
     "gender": "女性",
     "department": "人間科学",
     "operator": "demo",
@@ -31,7 +31,7 @@
   },
   {
     "name": "EE",
-    "age": 70,
+    "generation": 69,
     "gender": "女性",
     "department": "医用工学",
     "operator": "demo",

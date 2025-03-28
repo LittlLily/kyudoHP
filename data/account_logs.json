@@ -1,5 +1,11 @@
 [
   {
+    "operator": "demo",
+    "operation": "追加",
+    "accountName": "demodemo",
+    "timestamp": "2025-03-28T11:35:09.635Z"
+  },
+  {
     "operator": "demo3",
     "operation": "削除",
     "accountName": "demo3",

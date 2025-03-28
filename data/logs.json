@@ -1,6 +1,12 @@
 [
   {
     "operator": "demo",
+    "operation": "編集",
+    "memberName": "EE",
+    "timestamp": "2025-03-28T11:33:55.366Z"
+  },
+  {
+    "operator": "demo",
     "operation": "追加",
     "memberName": "EE",
     "timestamp": "2025-03-28T10:30:43.290Z"
