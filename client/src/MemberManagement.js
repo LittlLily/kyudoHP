@@ -9,6 +9,7 @@ function MemberManagement({ operator }) {
     id: null,
     name: '',
     generation: '',
+    "party": '',
     gender: '',
     department: ''
   });
@@ -39,7 +40,7 @@ function MemberManagement({ operator }) {
 
   // フォームリセット
   const resetForm = () => {
-    setMemberForm({ id: null, name: '', generation: '', gender: '', department: '' });
+    setMemberForm({ id: null, name: '', generation: '', "party": '', gender: '', department: '' });
     setIsEditing(false);
   };
 
@@ -54,6 +55,7 @@ function MemberManagement({ operator }) {
         body: JSON.stringify({
           name: memberForm.name,
           generation: Number(memberForm.generation),
+          party: memberForm.party,
           gender: memberForm.gender,
           department: memberForm.department,
           operator // ログとして送信
@@ -77,6 +79,7 @@ function MemberManagement({ operator }) {
         body: JSON.stringify({
           name: memberForm.name,
           generation: Number(memberForm.generation),
+          party: memberForm.party,
           gender: memberForm.gender,
           department: memberForm.department,
           operator // ログとして送信
@@ -137,16 +140,7 @@ function MemberManagement({ operator }) {
             onChange={(e) => setMemberForm({ ...memberForm, name: e.target.value })}
             required
           />
-        </div>
-        <div>
-          <label>年齢: </label>
-          <input
-            type="number"
-            value={memberForm.generation}
-            onChange={(e) => setMemberForm({ ...memberForm, generation: e.target.value })}
-            required
-          />
-        </div>
+        </div>       
         <div>
           <label>性別: </label>
           <input
@@ -165,6 +159,24 @@ function MemberManagement({ operator }) {
             required
           />
         </div>
+        <div>
+          <label>世代: </label>
+          <input
+            type="number"
+            value={memberForm.generation}
+            onChange={(e) => setMemberForm({ ...memberForm, generation: e.target.value })}
+            required
+          />
+        </div>
+        <div>
+          <label>流派: </label>
+          <input
+            type="text"
+            value={memberForm.party}
+            onChange={(e) => setMemberForm({ ...memberForm, party: e.target.value })}
+            required
+          />
+        </div> 
         <button type="submit">{isEditing ? '更新' : '追加'}</button>
         {isEditing && <button type="button" onClick={resetForm}>キャンセル</button>}
       </form>
@@ -175,7 +187,7 @@ function MemberManagement({ operator }) {
       <ul>
         {sortedMembers.map(member => (
           <li key={member.id}>
-            {member.name} - {member.department} - {member.generation}歳
+            {member.name} - {member.gender} - {member.department} - 第{member.generation}代 - {member.party}
             <button onClick={() => handleEdit(member)} style={{ marginLeft: '10px' }}>
               編集
             </button>
