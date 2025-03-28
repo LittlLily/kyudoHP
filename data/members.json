@@ -23,10 +23,18 @@
   },
   {
     "name": "DD",
-    "age": 66,
+    "age": 65,
     "gender": "女性",
     "department": "人間科学",
-    "operator": "1",
+    "operator": "demo",
     "id": 7
+  },
+  {
+    "name": "EE",
+    "age": 70,
+    "gender": "女性",
+    "department": "医用工学",
+    "operator": "demo",
+    "id": 8
   }
 ]

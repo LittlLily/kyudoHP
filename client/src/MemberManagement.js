@@ -62,7 +62,6 @@ function MemberManagement({ operator }) {
         .then(response => response.json())
         .then(updatedMember => {
           setMembers(members.map(m => (m.id === updatedMember.id ? updatedMember : m)));
-          setMessage('部員情報が更新されました');
           resetForm();
           fetchLogs();
         })
@@ -86,7 +85,6 @@ function MemberManagement({ operator }) {
         .then(response => response.json())
         .then(newMember => {
           setMembers([...members, newMember]);
-          setMessage('部員情報が追加されました');
           resetForm();
           fetchLogs();
         })
@@ -113,7 +111,6 @@ function MemberManagement({ operator }) {
       .then(response => response.json())
       .then(deletedMember => {
         setMembers(members.filter(m => m.id !== deletedMember.id));
-        setMessage('部員情報が削除されました');
         fetchLogs();
       })
       .catch(error => {
