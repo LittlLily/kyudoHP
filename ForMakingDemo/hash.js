@@ -1,5 +1,5 @@
 // hash.js
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const password = "demo";      // ハッシュ化したいパスワード
 const saltRounds = 10;        // ソルトのラウンド数（セキュリティと速度のバランス）
 
