@@ -5,7 +5,8 @@
     "gender": "男性",
     "department": "情報科学",
     "party": "syomen",
-    "id": 4
+    "id": 4,
+    "post": "----"
   },
   {
     "name": "AA",
@@ -13,7 +14,8 @@
     "gender": "男性",
     "department": "情報工学",
     "party": "syomen",
-    "id": 5
+    "id": 5,
+    "post": "----"
   },
   {
     "name": "CC",
@@ -22,7 +24,8 @@
     "department": "応用科学",
     "party": "syomen",
     "operator": "1",
-    "id": 6
+    "id": 6,
+    "post": "----"
   },
   {
     "name": "DD",
@@ -31,7 +34,8 @@
     "department": "人間科学",
     "party": "syomen",
     "operator": "demo",
-    "id": 7
+    "id": 7,
+    "post": "----"
   },
   {
     "name": "EE",
@@ -39,7 +43,18 @@
     "gender": "女性",
     "department": "医用工学",
     "party": "syomen",
+    "operator": "1",
+    "id": 8,
+    "post": "主将"
+  },
+  {
+    "name": "FF",
+    "generation": 67,
+    "party": "syomen",
+    "post": "----",
+    "gender": "男性",
+    "department": "都市工学",
     "operator": "demo",
-    "id": 8
+    "id": 9
   }
 ]

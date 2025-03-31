@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e97af8e0.css",
+    "main.js": "/static/js/main.f6fa7f6c.js",
+    "static/media/kantoku2.jpg": "/static/media/kantoku2.a97c3f69b04e1700bc39.jpg",
+    "static/media/nyuubu.jpg": "/static/media/nyuubu.3a67d50ac73c0bfc45be.jpg",
+    "static/media/rekisi1.jpg": "/static/media/rekisi1.0a1a82b8d159461a70bd.jpg",
+    "static/media/OBOG.jpg": "/static/media/OBOG.8ece2fc127c5f53993ce.jpg",
+    "static/media/katudou3.jpg": "/static/media/katudou3.99712b91ac63a1070c5a.jpg",
+    "static/media/kengaku1.jpg": "/static/media/kengaku1.e476a246e99a210a1f75.jpg",
+    "static/media/mikeikensya1.jpg": "/static/media/mikeikensya1.55b0d785cc0e2d6c38f0.jpg",
+    "static/media/basyo3.jpg": "/static/media/basyo3.cf0c034f85bb50740872.jpg",
+    "static/media/keikensya5.jpg": "/static/media/keikensya5.afbba08cacb1a6bf5717.jpg",
+    "static/media/ryuuha1.jpg": "/static/media/ryuuha1.46abb3d83d72fb594f7f.jpg",
+    "static/media/kantoku0jpg.jpg": "/static/media/kantoku0jpg.c70cbca517ea0f906c65.jpg",
+    "index.html": "/index.html",
+    "main.e97af8e0.css.map": "/static/css/main.e97af8e0.css.map",
+    "main.f6fa7f6c.js.map": "/static/js/main.f6fa7f6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e97af8e0.css",
+    "static/js/main.f6fa7f6c.js"
+  ]
+}

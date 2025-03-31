@@ -50,13 +50,10 @@ function Dashboard({ operator }) {
         <Bar data={chartData} />
       </div>
       <div style={{ marginBottom: '20px' }}>
-        <button onClick={() => navigate('/account-management')}>アカウント管理へ</button>
+        <button onClick={() => navigate('/tool/account-management')}>アカウント管理へ</button>
       </div>
       <div style={{ marginBottom: '20px' }}>
-        <button onClick={() => navigate('/member-management')}>部員管理へ</button>
-      </div>
-      <div>
-        <button onClick={() => navigate('/')}>ログアウト</button>
+        <button onClick={() => navigate('/tool/member-management')}>部員管理へ</button>
       </div>
     </div>
   );

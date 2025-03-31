@@ -13,6 +13,13 @@ import Login from './Login';
 import Dashboard from './Dashboard';
 import AccountManagement from './AccountManagement';
 import MemberManagement from './MemberManagement';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ProfilePage from './pages/ProfilePage';
+import OBOGProfilePage from './pages/OBOGProfilePage';
+import ResultPage from './pages/ResultPage';
+import SchedulePage from './pages/SchedulePage';
 
 function App() {
   // 認証状態と操作者（operator）の状態を管理
@@ -21,31 +28,23 @@ function App() {
 
   return (
     <Router>
-      <Routes>
+      <Header />
+      <main>
+        <Routes>
         // 以下でパスの構成を定義しています。
-        <Route
-          path="/"
-          element={
-            isAuthenticated ? (
-              <Navigate to="/dashboard" />
-            ) : (
-              <Login setIsAuthenticated={setIsAuthenticated} setOperator={setOperator} />
-            )
-          }
-        />
-        <Route
-          path="/dashboard"
-          element={isAuthenticated ? <Dashboard operator={operator} /> : <Navigate to="/" />}
-        />
-        <Route
-          path="/account-management"
-          element={isAuthenticated ? <AccountManagement operator={operator} /> : <Navigate to="/" />}
-        />
-        <Route
-          path="/member-management"
-          element={isAuthenticated ? <MemberManagement operator={operator} /> : <Navigate to="/" />}
-        />
-      </Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile/obog" element={<OBOGProfilePage />} />
+          <Route path="/results" element={<ResultPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/tool" element={isAuthenticated ? (<Navigate to="/tool/dashboard" />) : (<Login setIsAuthenticated={setIsAuthenticated} setOperator={setOperator} />)} />
+          <Route path="/tool/dashboard" element={isAuthenticated ? <Dashboard operator={operator} /> : <Navigate to="/tool" />} />
+          <Route path="/tool/account-management" element={isAuthenticated ? <AccountManagement operator={operator} /> : <Navigate to="/tool" />} />
+          <Route path="/tool/member-management" element={isAuthenticated ? <MemberManagement operator={operator} /> : <Navigate to="/tool" />}
+          />
+        </Routes>
+      </main>
+      <Footer />
     </Router>
   );
 }

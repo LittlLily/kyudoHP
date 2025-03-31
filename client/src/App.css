@@ -1,0 +1,1016 @@
+@charset "utf-8";
+/* 一覧
+1,共通部分
+2,header
+3,フッター
+4,HOME
+5,information
+6,部員紹介
+7,result
+8,schedule
+*/
+
+
+
+
+
+
+/*　共通部分　
+------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    min-width: 1110px;
+    min-height: max-content;
+    margin: 0;
+    font-family: "Yu Gothic Medium", "游ゴシック nedium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ pro W3", sans-serif;
+    line-height: 1.7;
+    color: #824100;
+    background-color: beige;
+}
+
+a {
+    font-weight: 600;
+    color: #8e6000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* テーブル基礎 */
+table {
+    width: 100%;
+    /* テーブルの幅を設定 */
+    margin-bottom: 30px;
+}
+
+
+th,
+td {
+    border: black;
+    /* 枠線のスタイル */
+    text-align: left;
+    /* テキストの揃え方 */
+    /* セルのパディング */
+    border-bottom: 1px solid rgb(53, 39, 24);
+    ;
+    /* 下線のスタイル */
+    padding-bottom: 5px;
+    /* 下線とテキストの間の距離 */
+    padding: 8px;
+}
+
+/* header
+------------------------------------*/
+.main-nav {
+    margin-top: 20ox;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* メニューの幅を画面幅いっぱいにする */
+    z-index: 1000;
+    /* メニューが他の要素の上に表示されるようにz-indexを設定 */
+    height: 166px;
+    /* メニューの背景色を設定 */
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#SNS {
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    position: fixed;
+    top: 25px;
+    right: 4px;
+    width: 20%;
+    z-index: 1005;
+    height: auto;
+}
+
+#SNS img {
+    margin: 8px 30px 0px 0px;
+    border-radius: 20px;
+    height: 75px;
+    width: 75px;
+}
+
+.page-header h1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 490px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    padding-top: 10px;
+    font-size: 2.5rem;
+}
+
+.page-header li {
+    margin: 0px 2px;
+    width: 20%;
+    height: 65px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.page-header a {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Philosopher', serif;
+}
+
+.main-nav div {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Philosopher', serif;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+.main-nav div:hover {
+    color: rgb(25, 118, 52);
+    font-family: 'Philosopher', serif;
+}
+
+/* フッター
+--------------------------------------------*/
+footer {
+    margin-top: 700px;
+    padding-top: 100px;
+    background: rgb(33, 22, 11);
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*  記事部分 */
+article {
+    /*width: 67%;*/
+    order: 2;
+}
+
+
+/* サイドバー */
+aside {
+    order: 3;
+}
+
+
+.post-info {
+    padding: 10px;
+    position: relative;
+}
+
+article h4 {
+    margin-top: 0;
+    margin-bottom: 0%;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: #0bd;
+}
+
+.sub-title {
+    margin-top: 0px;
+    font-size: 2rem;
+    padding: 15px 38px 0px;
+    font-weight: normal;
+}
+
+aside p {
+    padding: 12px 10px;
+}
+
+/* HOME
+-------------------------------------*/
+#home footer {
+    margin-top: 1000px;
+}
+
+.home-content {
+    height: 100lvh;
+    text-align: center;
+    padding-top: 177px;
+    padding-bottom: 20%;
+}
+
+.home-content h2 {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+
+#home table {
+    font-weight: 800;
+    width: 75%;
+    padding-left: 10%;
+}
+
+/* 見出し */
+.page-title {
+    font-family: "ab-shinyubipenjigyosyotai", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 160px;
+}
+
+.page-title:nth-child(5) {
+    padding-bottom: 250px;
+}
+
+
+.thank_line {
+    text-decoration: underline;
+    text-decoration-color: darkslateblue;
+}
+
+.font-change {
+    padding: 0px;
+    margin: 0px;
+    width: max-content;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.home-content img:nth-child(1) {
+    object-fit: cover;
+    width: 100%;
+    height: 113lvh;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-position: 50% 35%;
+}
+
+.home-content img:nth-child(2) {
+    height: 75lvh;
+    max-width: 100%;
+}
+
+.backgroundDark {
+    filter: brightness(0.2);
+    transition: filter 2s;
+}
+
+.backgroundNone {
+    filter: brightness(1);
+    transition: filter 6s;
+}
+
+
+/*information
+---------------------------------*/
+.information {
+    color: #b17800;
+}
+
+
+.information aside {
+    margin-top: 130px;
+    position: relative;
+    height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+#information .main-nav div {
+    color: rgb(38, 125, 63);
+    font-family: 'Philosopher', serif;
+}
+
+#information .main-nav div:hover {
+    color: rgb(15, 101, 22);
+    font-family: 'Philosopher', serif;
+}
+
+.aside-img {
+    border-radius: 10px;
+    background-image: url(../public/kyudobu_img/kantoku2.jpg);
+    width: 470px;
+    height: 470px;
+    background-position: center;
+    background-size: cover;
+}
+
+article {
+    margin: 0px 0%;
+}
+
+.articlePadding {
+    margin: 0px 10%;
+}
+
+aside {
+    margin: 0px 10%;
+}
+
+.information {
+    z-index: 10;
+}
+
+#歴史 img {
+    background-image: url(../public/kyudobu_img/rekisi1.jpg);
+}
+
+#歴史 .info-text {
+    left: 250px;
+}
+
+#流派 img {
+    margin-left: auto;
+    background-position: left;
+    background-image: url(../public/kyudobu_img/ryuuha1.jpg);
+}
+
+#流派 .info-text {
+    right: 250px;
+}
+
+#師範、監督、顧問 img {
+    background-image: url(../public/kyudobu_img/kantoku0jpg.jpg);
+}
+
+#師範、監督、顧問 .info-text {
+    left: 250px;
+}
+
+#活動場所 img {
+    margin-left: auto;
+    background-position: left;
+    background-image: url(../public/kyudobu_img/basyo3.jpg);
+}
+
+#活動場所 .info-text {
+    right: 250px;
+}
+
+#活動日 img {
+    background-image: url(../public/kyudobu_img/katudou3.jpg);
+}
+
+#活動日 .info-text {
+    left: 250px;
+}
+
+#見学について img {
+    margin-left: auto;
+    background-position: left;
+    background-image: url(../public/kyudobu_img/kengaku1.jpg);
+}
+
+#見学について .info-text {
+    right: 250px;
+}
+
+#入部について img {
+    background-image: url(../public/kyudobu_img/nyuubu.jpg);
+}
+
+#入部について .info-text {
+    left: 250px;
+}
+
+#未経験者の方へ img {
+    margin-left: auto;
+    background-position: left;
+    background-image: url(../public/kyudobu_img/mikeikensya1.jpg);
+}
+
+#未経験者の方へ .info-text {
+    right: 250px;
+}
+
+#経験者の方へ img {
+    background-image: url(../public/kyudobu_img/keikensya5.jpg);
+}
+
+#経験者の方へ .info-text {
+    left: 250px;
+}
+
+#OB・OGの方々へ img {
+    margin-left: auto;
+    background-position: left;
+    background-image: url(../public/kyudobu_img/OBOG.jpg);
+}
+
+#OB・OGの方々へ .info-text {
+    right: 250px;
+    margin-bottom: 1px;
+}
+
+.information article img {
+    z-index: 1;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-set {
+    position: relative;
+    display: flex;
+    margin: 430px 0px 0px 0px;
+}
+
+.info-text {
+    font-size: 1.5rem;
+    color: #452200;
+    padding: 22px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 310px;
+    z-index: 3;
+    width: 450px;
+}
+
+#OB・OGの方々へ .info-text {
+    width: 600px;
+}
+
+.post-info p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.post-info .sub-title {
+    margin-top: 280px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.information .sub-menu {
+    font-size: 1.7rem;
+    position: absolute;
+    left: 490px;
+}
+
+
+/* 部員紹介
+----------------------------------*/
+#profile {
+    margin-top: 165px;
+}
+
+.profile-generation p {
+    margin: 0px;
+    font-size: 4rem;
+
+}
+
+.profile-generation {
+    font-family: 'Philosopher', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-name,
+.profile-position,
+.profile-department {
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    direction: ltr;
+    font-size: 2rem;
+    height: 400px;
+}
+
+#profile h3 {
+    font-size: 1.5rem;
+    width: 830px;
+    font-weight: 100;
+    margin: 33px auto 27px auto;
+    ;
+}
+
+.profile-set {
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.3), 5px -5px 10px rgba(255, 255, 255, 0.5);
+    margin: 4px;
+    padding: 35px 0px 0px;
+    border-radius: 15px;
+    width: 162px;
+    /* 必要に応じて高さを指定 */
+    background-color: #fff;
+}
+
+.profile-explain img {
+    border-radius: 20px;
+    margin: 0px 20px 100px;
+    width: 162px;
+}
+
+.profile-explain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-explain div {
+    display: flex;
+}
+
+.profile-explain h2 {
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+.profile_item:first {
+    margin-right: 20px;
+}
+
+.profile-set img {
+    width: 162px;
+}
+
+.profile-item {
+    margin-top: 50px;
+    width: 162px;
+    display: flex;
+    grid-template-columns: 1fr;
+    /* 1列のレイアウトを指定 */
+    align-items: start;
+    /* アイテムを上詰めに配置 */
+    align-content: start;
+    /* 必要に応じて高さを指定 */
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.first-profile-item {
+    color: #fff;
+    margin-right: 30px;
+    display: flex;
+    direction: ltr;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1列のレイアウトを指定 */
+    align-items: start;
+    /* アイテムを上詰めに配置 */
+    align-content: start;
+    /* 全体を上詰めに配置 */
+    height: 100%;
+    /* 必要に応じて高さを指定 */
+    /*     border-left: 2px dotted black; */
+}
+
+.profile-table {
+    margin: 0px 20px 20px 20px;
+    height: auto;
+    width: auto;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    direction: rtl;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #000000;
+}
+
+.profile-head {
+    font-size: 2rem;
+    font-family: serif;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px 20px 20px 20px;
+    padding: 20px 70px 20px;
+}
+
+/* OBOG */
+#profile .sub-menu {
+    width: 210px;
+    border-radius: 20px;
+    padding: 10px 60px 10px 10px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 65px;
+    margin-right: auto;
+    margin-left: 8%;
+}
+
+#profile h4 {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+
+#profile h5 {
+    margin-top: 20px;
+    margin-left: 8%;
+    font-size: 1.7rem;
+}
+
+.aside-content {
+    display: flex;
+}
+
+.woman-C {
+    color: #ca0000;
+}
+
+.man-C {
+    color: #03267a;
+}
+
+
+/*result
+-----------------------------------------*/
+/* #result .imgSet{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#result .img1 {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+  background-image: url('../public/kyudobu_img/basyo3.jpg');
+  z-index: 1;
+}
+
+#result .img2 {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+  background-image: url('../public/kyudobu_img/2343860.jpg');
+  mix-blend-mode: screen;
+  z-index: 2;
+} */
+/* クリックされたときのアニメーションの設定 */
+#clickable-element {
+    transition: transform 0.5s ease;
+}
+
+/* クリックされたときのアニメーションの適用 */
+
+#clickable-element.clicked {
+    animation: bounce 0.5s;
+}
+
+#contents {
+    margin-top: 165px;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contents h3 {
+    margin-top: 300px;
+}
+
+#contents h4 {
+    font-size: 2rem;
+}
+
+#contents li {
+    font-size: 1.5rem;
+}
+
+.fight-box {
+    border-radius: 35px;
+    box-shadow:
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    /* place-items: center; */
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+}
+
+.fight-detail {
+    width: 40%;
+}
+
+.fight-detail p:nth-child(1) {
+    font-weight: 900;
+    font-size: 2vw;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.fight-detail p:nth-child(2) {
+    font-size: 2vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fight-detail p:nth-child(3) {
+    margin: 0px 0px 0px 30px;
+    font-size: 1.5rem;
+}
+
+.fight-detail p:nth-child(4) {
+    margin-bottom: 0;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    margin-top: 0px;
+}
+
+.fight-detail h2 {
+    margin: 0;
+    width: auto;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.fight-others h1 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 0px 0px 0px 30px;
+}
+
+.fight-others p {
+    font-weight: 100;
+}
+
+.fight-hit {
+    border-radius: 40px;
+    width: 60%;
+}
+
+#result #contents h5 {
+    font-size: 2rem;
+    padding: 5px 15px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.result-year {
+    margin-bottom: 140px;
+}
+
+#contents .sub-menu {
+    border-radius: 20px;
+    padding: 10px 60px 10px 10px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 160px;
+    margin-right: auto;
+    margin-left: 8%;
+}
+
+#contents h4 {
+    margin: 0px;
+}
+
+.fight-result {
+    padding-left: 30px;
+    margin: 20px auto 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.colored1 {
+    color: #fa4d4d;
+}
+
+#js-video {
+    display: none;
+}
+
+
+
+/* ???????????????????????????????????????? */
+#X-contents {
+    margin: 0px 7%;
+    margin-top: 165px;
+}
+
+#X-contents p {
+    font-size: 1.5rem;
+}
+
+#X-contents h1 {
+    margin-top: 130px;
+}
+
+.toX {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* メニューの背景色を設定 */
+    z-index: 10000;
+    /* メニューが他の要素の上に表示されるようにz-indexを設定 */
+}
+
+
+
+
+
+
+
+
+
+
+/*schedule
+---------------------------------------------*/
+#schedule {
+    margin-top: 165px;
+}
+
+.schedule_table {
+    margin-top: 20px;
+}
+
+.schedule_table p:nth-child(1) {
+    font-size: 1.5rem;
+    width: 190px;
+    margin-left: 10px;
+    /* テキストのフォント */
+    font-family: "Yu Gothic Medium", "游ゴシック nedium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ pro W3", sans-serif;
+    /* テキストの太さ */
+    font-weight: 700;
+    /* 下線のスタイル */
+    border-bottom: 2px solid rgb(177, 91, 0);
+}
+
+.schedule_table p:nth-child(2) {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    /* テキストのフォント */
+    font-family: "Yu Gothic Medium", "游ゴシック nedium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ pro W3", sans-serif;
+    /* テキストの太さ */
+    font-weight: 700;
+}
+
+.schedule_table table {
+    width: 100%;
+    /* テーブルの幅を設定 */
+    margin-bottom: 30px;
+}
+
+.schedule_table table tr:nth-child(even) {
+    background-color: #c2c2c2;
+}
+
+.schedule_table th {
+    font-size: 1.5rem;
+    border: black;
+    /* 枠線のスタイル */
+    text-align: center;
+    /* テキストの揃え方 */
+    padding: 8px;
+    /* テキストのフォント */
+    font-family: "Yu Gothic Medium", "游ゴシック nedium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ pro W3", sans-serif;
+    /* テキストの太さ */
+    font-weight: 1200;
+    /* セルのパディング */
+    border-bottom: 1px solid rgb(53, 39, 24);
+    /* 下線のスタイル */
+    padding-bottom: 5px;
+    /* 下線とテキストの間の距離 */
+}
+
+.schedule_table td {
+    font-size: 1.5rem;
+    border: black;
+    /* 枠線のスタイル */
+    text-align: center;
+    /* テキストの揃え方 */
+    padding: 8px;
+
+    /* テキストのフォント */
+    font-family: "Yu Gothic Medium", "游ゴシック nedium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ pro W3", sans-serif;
+    /* テキストの太さ */
+    font-weight: 800;
+
+    /* セルのパディング */
+    border-bottom: 1px dotted rgb(53, 39, 24);
+    border-right: 1px dotted rgb(53, 39, 24);
+    border-left: 1px dotted rgb(53, 39, 24);
+    /* 下線のスタイル */
+    padding-bottom: 3px;
+    /* 下線とテキストの間の距離 */
+}
+
+.schedule-content {
+    /* 上辺 */
+    color: #432;
+    padding: 40px;
+    margin-bottom: 80px;
+}
+
+.schedule-content article img {
+    width: 80%;
+    aspect-ratio: 4 / 3;
+    /* 4:3の縦横比に設定 */
+    object-fit: cover;
+    /* 縦横比を維持しつつカバー */
+    margin: 10px 0 20px;
+    border-radius: 20px;
+}
+
+.schedule_table td:nth-child(1) {
+    width: 8%;
+}
+
+.schedule_table td:nth-child(2) {
+    width: 30%;
+}
+
+.schedule_table td:nth-child(3) {
+    width: 13%;
+}
+
+.schedule_table td:nth-child(4) {
+    width: 18%;
+}
+
+.schedule_table td:nth-child(5) {
+    width: 31%;
+}
+
+#schedule article {
+    margin: 0px 118px;
+}
+
+.summer-content {
+    margin: 180px 5% 0 5%;
+    min-height: calc(100lvh - 270px);
+}
+
+.summer-set {
+    margin: 10px 0 0 0;
+    width: 20%;
+    height: 10%;
+    background-color: rgb(0, 109, 129);
+}
+
+.summer-set:not(:hover) {
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    width: 20%;
+    height: 10%;
+    background-color: rgb(0, 109, 129);
+}
+
+.summer-set:hover {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    min-width: 100%;
+    min-height: calc((100lvh - 270px)*2/3);
+    background-color: rgb(0, 109, 129);
+}
+
+.summer-img {
+    text-align: center;
+    width: 50%;
+    padding: 1%;
+}
+
+.summer-set img {
+    object-fit: cover;
+}

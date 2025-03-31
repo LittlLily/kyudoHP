@@ -25,7 +25,7 @@ function Login({ setIsAuthenticated, setOperator }) {
         // 認証成功時、認証状態を true にし、操作者としてログインしたアカウント名を保存
         setIsAuthenticated(true);
         setOperator(data.account.accountId);
-        navigate('/dashboard');
+        navigate('/tool/dashboard');
       })
       .catch(error => {
         setErrorMsg('アカウントIDまたはパスワードが正しくありません');
