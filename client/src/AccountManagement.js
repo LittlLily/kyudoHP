@@ -139,7 +139,7 @@ function AccountManagement({ operator }) {
   return (
     <div style={{ padding: '20px' }}>
       <h1>アカウント管理</h1>
-      <button onClick={() => navigate('/dashboard')}>ダッシュボードに戻る</button>
+      <button onClick={() => navigate('/tool/dashboard')}>ダッシュボードに戻る</button>
       
       {/* アカウント一覧 */}
       <section style={{ marginTop: '20px' }}>

@@ -131,7 +131,7 @@ function MemberManagement({ operator }) {
   return (
     <div style={{ padding: '20px' }}>
       <h1>部員管理</h1>
-      <button onClick={() => navigate('/dashboard')}>ダッシュボードに戻る</button>
+      <button onClick={() => navigate('/tool/dashboard')}>ダッシュボードに戻る</button>
       
       {/* 部員情報の追加・編集フォーム */}
       <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
