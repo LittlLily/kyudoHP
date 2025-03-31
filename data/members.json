@@ -2,7 +2,7 @@
   {
     "name": "BB",
     "generation": 15,
-    "gender": "男性",
+    "gender": "man",
     "department": "情報科学",
     "party": "syomen",
     "id": 4,
@@ -11,7 +11,7 @@
   {
     "name": "AA",
     "generation": 63,
-    "gender": "男性",
+    "gender": "man",
     "department": "情報工学",
     "party": "syomen",
     "id": 5,
@@ -20,7 +20,7 @@
   {
     "name": "CC",
     "generation": 64,
-    "gender": "男性",
+    "gender": "man",
     "department": "応用科学",
     "party": "syomen",
     "operator": "1",
@@ -30,7 +30,7 @@
   {
     "name": "DD",
     "generation": 65,
-    "gender": "女性",
+    "gender": "woman",
     "department": "人間科学",
     "party": "syomen",
     "operator": "demo",
@@ -40,7 +40,7 @@
   {
     "name": "EE",
     "generation": 69,
-    "gender": "女性",
+    "gender": "woman",
     "department": "医用工学",
     "party": "syomen",
     "operator": "1",
@@ -52,7 +52,7 @@
     "generation": 67,
     "party": "syomen",
     "post": "----",
-    "gender": "男性",
+    "gender": "man",
     "department": "都市工学",
     "operator": "demo",
     "id": 9

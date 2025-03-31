@@ -22,7 +22,7 @@ import ResultPage from './pages/ResultPage';
 import SchedulePage from './pages/SchedulePage';
 
 function App() {
-  // 認証状態と操作者（operator）の状態を管理
+  /* 認証状態と操作者（operator）の状態を管理 */
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [operator, setOperator] = useState('');
 
@@ -31,7 +31,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-        // 以下でパスの構成を定義しています。
+        {/* 以下でパスの構成を定義しています。 */}
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/profile/obog" element={<OBOGProfilePage />} />
